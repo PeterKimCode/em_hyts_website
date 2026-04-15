@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>임마누엘신학교</title>
+    <title>조직도 | 임마누엘신학교</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="icon" type="image/png" href="assets/images/site-logo.png">
@@ -44,440 +44,101 @@
                     <span>학교소개</span>
                 </summary>
                 <div class="nav-dropdown-menu">
-                    <a href="intro_greeting.html">학장인사말</a>
+                    <a href="intro_greeting.html">학장 인사말</a>
                     <a href="intro_ideology.html">교육이념</a>
                     <a href="intro_history.html">연혁</a>
                     <a href="intro_faculty.html">교수 소개</a>
                     <a href="intro_school.html">오시는길</a>
                 </div>
             </details>
-
-
-   <!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>오시는 길 | 임마누엘신학교</title>
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    
-    <link rel="icon" type="image/png" href="assets/images/site-logo.png">
-
-    <style>
-        /* 기본 스타일 초기화 및 설정 (간단하게) */
-        :root {
-            --bg-color-content: #ffffff;
-            --bg-color-aside: #fff;
-            --border-color: #eee;
-            --text-color: #333;
-            --font-family-base: 'Pretendard Variable', 'Noto Sans KR', sans-serif;
-            --container-max-width: 1100px;
-        }
-
-        body {
-            margin: 0;
-            font-family: var(--font-family-base);
-            color: var(--text-color);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            overflow-x: hidden;
-            background-color: #fafafa; /* 전체 배경 회색 */
-        }
-
-        /* 공통 컨테이너 */
-        .container {
-            max-width: var(--container-max-width);
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* 심플 헤더 스타일 */
-        .top-nav {
-            background-color: #fff;
-            padding: 15px 0;
-            border-bottom: 1px solid var(--border-color);
-        }
-        .top-nav-inner {
-            display: flex;
-            justify-content: center; /* 중앙 정렬 */
-            align-items: center;
-        }
-        .logo-area {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: #000;
-        }
-        .main-logo-image {
-            height: 35px; /* 미니멀하게 */
-            margin-right: 10px;
-        }
-        .logo-text h1 {
-            margin: 0;
-            font-size: 1.1rem;
-            font-weight: 700;
-        }
-        .logo-text span {
-            font-size: 0.75rem;
-            color: #666;
-        }
-        .top-links {
-            margin-left: 30px; /* 미니멀하게 */
-            display: flex;
-            gap: 15px;
-        }
-        .top-links a {
-            text-decoration: none;
-            color: #666;
-            font-size: 0.85rem;
-        }
-        .lang-selector {
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: #666;
-            font-size: 0.85rem;
-        }
-
-        /* 심플 네비게이션 스타일 (아이콘 제거, 텍스트 링크로) */
-        .main-category-nav {
-            background-color: #fff;
-            padding: 15px 0;
-            border-bottom: 1px solid var(--border-color);
-        }
-        .nav-icons-wrap {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px; /* 미니멀하게 */
-        }
-        .nav-item {
-            text-decoration: none;
-            color: #333;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        /* 본문 콘텐츠 스타일 */
-        .content-page {
-            background-color: var(--bg-color-content);
-            padding: 40px 0;
-            margin: 20px 0; /* 미니멀하게 */
-            border-radius: 4px;
-        }
-
-        /* 본문 히어로 섹션 */
-        .page-hero {
-            margin-bottom: 30px;
-        }
-        .page-category {
-            display: block;
-            font-size: 0.85rem;
-            color: #666;
-            margin-bottom: 3px;
-        }
-        .page-hero h1 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin: 0;
-        }
-        .page-hero p {
-            color: #333;
-            margin: 8px 0 0;
-            font-size: 0.9rem;
-        }
-
-        /* 본문 데이터 섹션 */
-        .page-body {
-            margin-bottom: 40px;
-        }
-        .info-layout {
-            display: flex;
-            gap: 30px;
-        }
-
-        /* 왼쪽 센터 위치 섹션 */
-        .info-block {
-            flex: 2;
-        }
-        .info-block h2 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-        .info-block .lead {
-            font-size: 1.1rem;
-            font-weight: 500;
-            color: #333;
-            margin-bottom: 12px;
-        }
-        .info-block p {
-            margin: 0 0 12px;
-            line-height: 1.5;
-            color: #333;
-            font-size: 0.9rem;
-        }
-        .info-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .info-list li {
-            position: relative;
-            padding-left: 12px;
-            margin-bottom: 8px;
-            color: #333;
-            font-size: 0.9rem;
-        }
-        .info-list li::before {
-            content: '•';
-            position: absolute;
-            left: 0;
-            color: #333;
-        }
-        .info-list li strong {
-            font-weight: 500;
-        }
-
-        /* 오른쪽 방문 전 확인사항 섹션 (심플하게) */
-        .info-aside {
-            flex: 1;
-            background: var(--bg-color-aside); 
-            padding: 20px;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-        }
-        .info-aside h3 {
-            font-size: 1rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-        .info-aside__lead {
-            font-size: 0.8rem;
-            color: #666;
-            margin-bottom: 12px;
-        }
-        .contact-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .contact-list li {
-            margin-bottom: 8px;
-            font-size: 0.85rem;
-            color: #333;
-        }
-        .contact-list li strong {
-            font-weight: 500;
-        }
-        .contact-list li a {
-            text-decoration: none;
-            color: #333;
-        }
-        .info-aside .btn.ghost {
-            display: block;
-            text-align: center;
-            margin-top: 15px;
-            padding: 8px;
-            border: 1px solid #ddd;
-            text-decoration: none;
-            color: #333;
-            font-size: 0.85rem;
-        }
-
-        /* 지도 섹션 (심플하게) */
-        .map-section {
-            padding: 40px 0;
-            background-color: var(--bg-color-content);
-            border-radius: 4px;
-        }
-        .map-section__grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        .map-section__details.map-card {
-            padding: 25px;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-        }
-        .map-section__details h2 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-        .map-meta dl {
-            margin: 0;
-        }
-        .map-meta dt {
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 3px;
-            font-size: 0.9rem;
-        }
-        .map-meta dd {
-            margin: 0 0 12px 0;
-            color: #333;
-            font-size: 0.9rem;
-        }
-        .map-meta dd a {
-            text-decoration: none;
-            color: #333;
-        }
-        .map-section__embed.map-card {
-            padding: 15px; 
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-        }
-        .map-embed {
-            height: 300px; /* 미니멀하게 */
-            background: #eee;
-        }
-        .map-embed iframe {
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-        /* 심플 푸터 스타일 */
-        .modern-footer {
-            background-color: #333;
-            color: #fff;
-            padding: 30px 0;
-        }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr; /* 미니멀하게 비율 조정 */
-            gap: 20px;
-        }
-        .f-col h6 {
-            font-size: 0.75rem;
-            color: #999;
-            margin-bottom: 8px;
-        }
-        .f-brand {
-            font-size: 1.1rem;
-            margin: 0 0 4px;
-        }
-        .f-col p {
-            margin: 0 0 4px;
-            font-size: 0.85rem;
-            color: #ccc;
-        }
-        .f-links ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .f-links li {
-            margin-bottom: 6px;
-        }
-        .f-links a {
-            text-decoration: none;
-            color: #ccc;
-            font-size: 0.85rem;
-        }
-        .f-connect .btn-primary {
-            display: inline-block;
-            background: #fff;
-            color: #000;
-            padding: 6px 12px;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-top: 8px;
-            font-size: 0.85rem;
-        }
-        .footer-bottom {
-            margin-top: 25px;
-            border-top: 1px solid #444;
-            padding-top: 15px;
-            font-size: 0.75rem;
-            color: #aaa;
-        }
-    </style>
-</head>
-<body>
-    <header class="top-nav">
-        <div class="container top-nav-inner">
-            <a class="logo-area" href="index.html">
-                <img src="assets/images/site-logo.png" alt="학교 로고" class="main-logo-image">
-                <div class="logo-text">
-                    <h1>임마누엘신학교</h1>
-                    <span>Immanuel Theological Seminary</span>
-                </div>
+            <a href="admissions_guideline.html" class="nav-icon-link">
+                <div class="icon-box"><i class="ph-light ph-graduation-cap"></i></div>
+                <span>입학안내</span>
             </a>
-            <div class="top-links">
-                <a href="index.html">Home</a>
-                <a href="sitemap.html">사이트맵</a>
-                <button type="button" class="lang-selector" data-lang-toggle aria-label="영어 번역 전환">ENG</button>
-            </div>
-        </div>
-    </header>
-
-    <nav class="main-category-nav">
-        <div class="container nav-icons-wrap">
-            <a href="#" class="nav-item">학교소개</a>
-            <a href="#" class="nav-item">학사안내</a>
-            <a href="#" class="nav-item">입학안내</a>
-            <a href="#" class="nav-item">커뮤니티</a>
+            <a href="degree_bachelor.html" class="nav-icon-link">
+                <div class="icon-box"><i class="ph-light ph-student"></i></div>
+                <span>학위과정</span>
+            </a>
+            <a href="academic_info.html" class="nav-icon-link">
+                <div class="icon-box"><i class="ph-light ph-calendar-blank"></i></div>
+                <span>학사안내</span>
+            </a>
+            <a href="campus_life.html" class="nav-icon-link">
+                <div class="icon-box"><i class="ph-light ph-users"></i></div>
+                <span>대학생활</span>
+            </a>
+            <a href="research_intro.html" class="nav-icon-link">
+                <div class="icon-box"><i class="ph-light ph-microscope"></i></div>
+                <span>학술연구</span>
+            </a>
+            <a href="online_service.html" class="nav-icon-link">
+                <div class="icon-box"><i class="ph-light ph-desktop"></i></div>
+                <span>온라인서비스</span>
+            </a>
         </div>
     </nav>
 
-    <main class="content-page container">
-        <section class="page-hero">
-            <span class="page-category">학교소개</span>
-            <h1>오시는 길 안내</h1>
-            <p>임마누엘신학교 소새울교육센터 방문을 위한 위치 정보와 교통 안내를 제공합니다.</p>
-        </section>
+<main class="fade-in">
+        <div class="page-header">
+            <h2>한영총회 인준신학교</h2>
+        </div>
 
-        <section class="page-body">
-            <div class="info-layout">
-                <article class="info-block">
-                    <h2>센터 위치</h2>
-                    <p class="lead">경기도 부천시 소사로 16번길 40</p>
-                    <p>지하철과 버스 등 대중교통 이용이 편리하며, 사전 예약 시 상담실 이용이 가능합니다.</p>
-                    <ul class="info-list">
-                        <li><strong>지하철:</strong> 1호선 소사역 / 서해선 소새울역</li>
-                        <li><strong>버스:</strong> 6, 12, 661번 — 소새울역 하차 후 도보 3분</li>
-                        <li><strong>주차:</strong> 건물 내 주차장 이용 가능 (방문 등록 시 1시간 무료)</li>
-                    </ul>
+           <div class="container page-content-area shadow-sm">
+            <section class="intro-section">
+                <h3>신학교 인준 및 교역자 양성 원칙</h3>
+                <p>한영총회는 교단의 미래를 책임질 목회자 양성을 위해 '총회 인준 교육기관' 제도를 운영합니다.</p>
+            </section>
+
+            <section class="org-flow">
+                <article class="org-card">
+                    <span class="org-step">교육 과정</span>
+                    <h3>대한예수교장로회(한영) 총회</h3>
+                    <p>최근 한영총회는 서울한영대학교와의 결별 이후 교육 인프라를 확장하여 현재 총 5개의 인준 교육기관을 운영 및 협력하고 있습니다.</p>
+                    <p>평택대학교 (피어선신학전문대학원): 2023년 11월 총회 교역자 양성 인준 교육기관으로 MOU를 체결했습니다. 이를 통해 평택대학교에서 수학한 이들이 한영총회에서 목회자로 활동할 수 있는 길이 열렸습니다.</p>
+                    <p>필리핀 GTCC 대학교 (General Trias College of Cavite): 한영총회 동남아시아 노회 등과 연계된 해외 인준 기관으로, 국제적인 신학 교류와 선교사 양성을 목적으로 인준되어 있습니다.</p>
+                    <p>기타 인준 기관: 총회 내부 규정에 따라 심사를 통과한 신학교 및 연구원들이 포함됩니다.</p>
                 </article>
-                
-                <aside class="info-aside">
-                    <h3>방문 전 확인사항</h3>
-                    <p class="info-aside__lead">원활한 상담을 위해 예약을 권장합니다.</p>
-                    <ul class="contact-list">
-                        <li><strong>상담 예약:</strong> 온라인 신청서 접수</li>
-                        <li><strong>운영 시간:</strong> 평일 09:00 – 18:00</li>
-                        <li><strong>문의 전화:</strong> <a href="tel:010-3180-0291">010-3180-0291</a></li>
-                    </ul>
-                    <a class="btn ghost" href="support.html">상담 예약하기</a>
-                </aside>
-            </div>
-        </section>
 
-        <section class="map-section map-section__grid">
-            <div class="map-section__details map-card">
-                <h2>찾아오시는 길</h2>
-                <div class="map-meta">
-                    <dl>
-                        <dt>주소</dt>
-                        <dd>경기도 부천시 소사로 16번길 40</dd>
-                        <dt>대표 연락처</dt>
-                        <dd><a href="tel:010-3180-0291">010-3180-0291</a></dd>
-                    </dl>
-                </div>
-            </div>
-            <div class="map-section__embed map-card">
-                <div class="map-embed">
-                    <iframe title="임마누엘신학교 위치" src="about:blank"></iframe>
-                </div>
-            </div>
-        </section>
+<section class="theology-section">
+    <header class="section-header">
+        <div class="header-logo"></div> <h2 class="section-title">예장(한영) 총회 인준 신학교육기관</h2>
+    </header>
+
+    <div class="value-grid">
+        <a href="http://www.hypck.org/" target="_blank" class="value-card-link">
+            <article class="value-card">
+                <h4>임마누엘신학교</h4>
+                <p class="presbytery-info">(경기노회)</p>
+                <p class="description-text">글로벌 목회자 및 선교,<br> 지도자 양성 중심 기관</p>
+                </article>
+        </a>
+
+        <a href="http://www.hypck.org/" target="_blank" class="value-card-link">
+            <article class="value-card">
+                <h4>유니온신학교</h4>
+                <p class="presbytery-info">(유니온노회)</p>
+                <p class="description-text">교단의 신학적 기준에따라,<br>목회자를 양성하는 교육기관</p>
+                </article>
+        </a>
+
+        <a href="http://www.hypck.org/" target="_blank" class="value-card-link">
+            <article class="value-card">
+                <h4>국제신학교</h4>
+                <p class="presbytery-info">(인천노회)</p>
+                <p class="description-text">교단의 연속성과 신학적 정체성을 유지하며,<br>교육기관 운영의 안정성을 확보합니다.</p>
+                </article>
+        </a>
+    </div>
+</section>
+
+
+               
+            <section class="intro-section">
+                <p>총회신학학술연구원은 교단과 직영 및 인준 신학교를 유기적으로 연결하여, 개혁주의 신학에 기초한 통합적 신학교육 체계를 구축하고 목회자 양성의 사명을 감당하고 있습니다.</p>
+            </section>
+        </div>
+
+    
     </main>
 
     <footer class="modern-footer">
@@ -493,46 +154,25 @@
                 <div class="f-col f-links">
                     <h6>QUICK LINKS</h6>
                     <ul>
-                        <li><a href="http://www.hypck.org/">한영총회</a></li>
-                        <li><a href="http://gtcc.edu.ph/">GTCC대학교</a></li>
-                        <li><a href="https://myyoungji.com/">영지국제학교</a></li>
+                       <li><a href="http://www.hypck.org/">한영총회 <i class="ph-light ph-arrow-right"></i></a></li>
+                        <li><a href="http://gtcc.edu.ph/">GTCC대학교 <i class="ph-light ph-arrow-right"></i></a></li>
+                        <li><a href="https://myyoungji.com/">영지국제학교 <i class="ph-light ph-arrow-right"></i></a></li>
+                        <li><a href="http://www.hypck.org/">임마누엘신학교 <i class="ph-light ph-arrow-right"></i></a></li>
+                        <li><a href="http://www.hypck.org/">유니온신학교 <i class="ph-light ph-arrow-right"></i></a></li>
                     </ul>
                 </div>
                 <div class="f-col f-connect">
                     <h6>CONNECT</h6>
-                    <p>개혁주의 신학의 토대 위에 지도자를 세우는 신학 공동체입니다.</p>
+                    <p>개혁주의 신학의 토대 위에 교회와 세계를 섬기는 목회자와 지도자를 세우는 신학 공동체입니다.</p>
                     <a href="admissions_guideline.html" class="btn-primary">입학 안내 확인하기</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 대한예수교장로회(한영) 임마누엘신학교. All rights reserved.</p>
+                <p>&copy; 2026 대한예수교장로회(한영) 임마누엘신학교. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/site.js"></script>
-</body>
-</html>
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <div>
-                <strong>임마누엘신학교</strong><br>
-                010-3180-0291<br>
-                admin@hyts.ac.kr
-            </div>
-            <div style="text-align: right;">
-                한영총회 | GTCC대학교 | 영지국제학교
-            </div>
-        </div>
-        <div class="footer-bottom">
-            © 2026 대한예수교장로회(한영) 임마누엘신학교. All rights reserved.
-        </div>
-    </div>
-</footer>
-
-</body>
-</html>
     <script src="js/site.js"></script>
 </body>
 </html>
