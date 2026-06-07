@@ -1,7 +1,7 @@
 {
   "id": "research-forum",
-  "title": "연구자 논문&포럼",
-  "description": "연구 자료, 포럼 일정, 논문 안내 게시판",
+  "title": "연구자 논문&포럼 자료등록",
+  "description": "연구 자료, 포럼 일정, 논문 등록 안내 게시판",
   "page": "board_research_forum.html",
   "posts": [
     {
